@@ -9,10 +9,14 @@ jobs:
     steps:
       - name: Preparation
         run: |
-          git clone https://github.com/UniFiTyr/Bruh.git
-          cd Bruh 
-          chmod +x test.sh
-          ./test.sh > output.log 2>&1
+          git clone https://github.com/UniFiTyr/Bruh.git &&
+          cd Bruh
+      
+      - name: Make it executable
+        run: chmod +x test.sh
+      
+      - name: Execute it
+        run: ./test.sh > output.log 2>&1
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
