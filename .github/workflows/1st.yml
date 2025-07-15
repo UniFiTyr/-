@@ -10,8 +10,12 @@ jobs:
       - name: Preparation
         run: |
           git clone https://github.com/UniFiTyr/Bruh.git
-          ls
-          cd Bruh
-          ls
+          cd Bruh 
           chmod +x test.sh
           ./test.sh > output.log
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: output_log
+          path: output.log
