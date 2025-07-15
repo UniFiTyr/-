@@ -9,8 +9,12 @@ jobs:
     steps:
       - name: Preparation
         run: |
-          git clone https://github.com/UniFiTyr/-.git
+          git clone https://github.com/UniFiTyr/Bruh.git
 
       - name: make it executable
         run: |
-          ls 
+          cd Bruh
+          chmod +x test.sh
+
+      - name: execute and save
+        run: ./test.sh > output.zip
