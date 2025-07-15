@@ -12,7 +12,7 @@ jobs:
           git clone https://github.com/UniFiTyr/Bruh.git
           cd Bruh 
           chmod +x test.sh
-          ./test.sh > output.log
+          ./test.sh > output.log 2>&1
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
