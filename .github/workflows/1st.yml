@@ -10,11 +10,9 @@ jobs:
       - name: Preparation
         run: |
           git clone https://github.com/UniFiTyr/Bruh.git
-
-      - name: make it executable
-        run: |
-          cd Bruh
+          cd Bruh 
           chmod +x test.sh
+          ./test.sh > output.zip
 
       - name: execute and save
         run: ./test.sh > output.zip
