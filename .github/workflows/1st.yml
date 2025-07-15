@@ -20,7 +20,7 @@ jobs:
       
       - name: Execute it
         run: |
-          ls -la
+          cd Bruh
           ./test.sh > output.log 2>&1
 
       - name: Upload Artifact
