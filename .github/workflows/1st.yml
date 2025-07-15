@@ -13,7 +13,9 @@ jobs:
           cd Bruh
       
       - name: Make it executable
-        run: chmod +x test.sh
+        run: |
+          pwd
+          ls
       
       - name: Execute it
         run: ./test.sh > output.log 2>&1
