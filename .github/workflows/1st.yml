@@ -13,7 +13,7 @@ jobs:
 
       - name: make it executable
         run: |
-          cd -/
+          cd '-'
           chmod +x test.sh
 
       - name: execute and save
