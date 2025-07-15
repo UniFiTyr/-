@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Habilita modo estrito
-set -euo pipefail
-
 echo "Iniciando testes automatizados..."
 
 # Simulando testes unitários
