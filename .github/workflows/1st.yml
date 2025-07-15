@@ -14,7 +14,4 @@ jobs:
           cd Bruh
           ls
           chmod +x test.sh
-          ./test.sh > output.zip
-
-      - name: execute and save
-        run: ./test.sh > output.zip
+          ./test.sh > output.log
