@@ -20,7 +20,7 @@ jobs:
       - name: Execute it
         run: |
           cd Bruh
-          ./test.sh | tee output.log
+          ./test.sh | tee output.log | ls
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
