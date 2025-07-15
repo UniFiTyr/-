@@ -13,8 +13,4 @@ jobs:
 
       - name: make it executable
         run: |
-          cd '-'
-          chmod +x test.sh
-
-      - name: execute and save
-        run: ./test.sh > output.zip
+          ls 
