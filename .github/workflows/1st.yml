@@ -16,7 +16,6 @@ jobs:
         run: |
           cd Bruh && 
           chmod +x test.sh
-          echo ls -la
       
       - name: Execute it
         run: |
